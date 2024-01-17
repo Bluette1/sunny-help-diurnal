@@ -1,0 +1,16 @@
+---
+name: Linters
+on: pull_request
+env:
+  FORCE_COLOR: 1
+jobs:
+  eslint:
+    name: Eslint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Setup Eslint
+        run: yarn --ignore-engines
+      - name: Eslint Report
+        run: npx eslint . 

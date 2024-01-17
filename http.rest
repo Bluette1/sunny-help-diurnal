@@ -1,0 +1,18 @@
+###
+GET http://localhost:8080/kofi
+
+###
+POST  http://localhost:8080/kofi
+Content-Type: application/json
+
+{
+    "data": { 
+    "message_id":"3a1fac0c-f960-4506-a60e-824979a74e74",
+    "timestamp":"2017-08-21T13:04:30.7296166Z",
+    "type":"Donation",
+    "from_name":"John Smith",
+    "message":"Good luck with the integration! My username is seriousone#0",
+    "amount":"10.00",
+    "url":"https://ko-fi.com"
+    }
+}
